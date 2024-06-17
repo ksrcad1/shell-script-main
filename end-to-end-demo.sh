@@ -32,8 +32,9 @@ for str in ${MYARRAY[@]}; do #declaration
   echo $str
   if [ $str == "element1" ]
   then
-    echo " executed if condtion"
+    echo "executed if condtion"
   else
-    echo " executing else condition"
+    echo "exiting the loop, condition failed"
+    exit 1
   fi
 done
