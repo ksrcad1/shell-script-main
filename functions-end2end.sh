@@ -6,3 +6,5 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 echo "the format is $USERID-$TIMESTAMP-$SCRIPT_NAME"
+
+echo "the format is ${USERID-TIMESTAMP-SCRIPT_NAME}"
