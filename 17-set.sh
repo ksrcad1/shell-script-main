@@ -1,4 +1,5 @@
 #!/bin/bash
+#https://unix.stackexchange.com/questions/462156/how-do-i-find-the-line-number-in-bash-when-an-error-occured
 
 set -e
 
