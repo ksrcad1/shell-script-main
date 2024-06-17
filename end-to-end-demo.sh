@@ -24,6 +24,6 @@ MYARRAY=("element1" "element2" "element3" "element1") #declaration
 echo "the element at index-0 is: ${MYARRAY[0]}"
 echo "All elements of and array can be printed using 'array[@]' : ${MYARRAY[0]}"
 echo "looping thorugh the array elements"
-for str in ${MYARRAY[@]}; declaration
+for str in ${MYARRAY[@]}; #declaration
   echo $str
 done
