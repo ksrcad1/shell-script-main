@@ -27,3 +27,4 @@ echo "looping thorugh the array elements"
 for str in ${MYARRAY[@]}; do #declaration
   echo $str
 done
+#
