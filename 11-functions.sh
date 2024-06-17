@@ -25,6 +25,7 @@ fi
 
 dnf install mysql -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL"  # first argument is $1-> is $?, second argument is $2 -> "Installing MySQL"
+#calling function VALIDATE and passing previous command status code and the string
 
 dnf install git -y &>>$LOGFILE
 VALIDATE $? "Installing Git"
