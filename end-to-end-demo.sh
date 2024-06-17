@@ -28,3 +28,12 @@ for str in ${MYARRAY[@]}; do #declaration
   echo $str
 done
 #
+for str in ${MYARRAY[@]}; do #declaration
+  echo $str
+  if [ $str == "element1" ]
+  then
+    echo " executed if condtion"
+  else
+    echo " executing else condition"
+  fi
+done
