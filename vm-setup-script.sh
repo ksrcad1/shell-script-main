@@ -10,7 +10,7 @@ else
     echo "You are super user."
 fi
 
-dnf dnf install bash-completion -y
+dnf install bash-completion -y
 
 if [ $? -ne 0 ] #check the execution of last command (dnf install mysql -y) through -> $? 
 then
