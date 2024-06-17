@@ -28,17 +28,8 @@ for str in ${MYARRAY[@]}; do #declaration
   echo $str
 done
 #
-for str in ${MYARRAY[@]}; do #declaration
-  #echo $str
-  if [ $str == "element1" ]
-  then
-    echo "executed if condtion and element is: $str"
-  else
-    echo "exiting the loop, condition failed"
-    exit 1
-  fi
-done
 
+## passing the arguments from cmd line 
 NUMBER=$1
 
 if [ $NUMBER -gt 10 ]
@@ -49,3 +40,15 @@ else
 fi
 
 #-gt, -lt, -eq, -ge, -le
+
+
+for str in ${MYARRAY[@]}; do #declaration
+  #echo $str
+  if [ $str == "element1" ]
+  then
+    echo "executed if condtion and element is: $str"
+  else
+    echo "exiting the loop, condition failed"
+    exit 1
+  fi
+done
